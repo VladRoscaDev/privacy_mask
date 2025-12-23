@@ -1,4 +1,4 @@
-package com.example.privacy_mask
+package com.VladRoscaDev.privacy_mask
 
 import android.app.Activity
 import android.view.WindowManager

@@ -1,4 +1,4 @@
-group = "com.example.privacy_mask"
+group = "com.VladRoscaDev.privacy_mask"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -25,7 +25,7 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    namespace = "com.example.privacy_mask"
+    namespace = "com.VladRoscaDev.privacy_mask"
 
     compileSdk = 36
 

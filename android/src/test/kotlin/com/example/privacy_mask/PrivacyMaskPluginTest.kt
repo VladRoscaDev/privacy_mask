@@ -1,4 +1,4 @@
-package com.example.privacy_mask
+package com.VladRoscaDev.privacy_mask
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

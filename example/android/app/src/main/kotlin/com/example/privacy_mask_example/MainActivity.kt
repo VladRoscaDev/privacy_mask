@@ -1,4 +1,4 @@
-package com.example.privacy_mask_example
+package com.VladRoscaDev.privacy_mask_example
 
 import io.flutter.embedding.android.FlutterActivity
 

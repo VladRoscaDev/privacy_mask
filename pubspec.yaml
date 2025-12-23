@@ -25,7 +25,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.privacy_mask
+        package: com.VladRoscaDev.privacy_mask
         pluginClass: PrivacyMaskPlugin
       ios:
         pluginClass: PrivacyMaskPlugin
