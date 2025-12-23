@@ -1,6 +1,6 @@
 name: privacy_mask
 description: A lightweight Flutter widget to protect sensitive content by preventing screenshots and screen recording at the OS level on Android and iOS.
-version: 1.0.0
+version: 1.0.1
 # Replace with your actual GitHub repository URL
 repository: https://github.com/VladRoscaDev/privacy_mask 
 # If you don't have a separate website, you can leave homepage empty or use the repo link

@@ -47,4 +47,4 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  privacy_mask: ^1.0.0
+  privacy_mask: ^1.0.1
