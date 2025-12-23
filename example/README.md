@@ -37,6 +37,8 @@ When a user attempts to take a screenshot or record the screen while protection 
 
 ---
 
+## ⚠️ Warning
+Note on Testing: Screenshot prevention is a hardware-level feature. It will not work on the iOS Simulator because the Simulator bypasses the iOS Render Server. To verify iOS protection, you must use a physical device and test using Screen Recording or Screen Mirroring.
 
 
 ## 🚀 Getting Started
@@ -46,5 +48,3 @@ Add the dependency to your `pubspec.yaml`:
 ```yaml
 dependencies:
   privacy_mask: ^1.0.0
-
-## ⚠️ Note on Testing: Screenshot prevention is a hardware-level feature. It will not work on the iOS Simulator because the Simulator bypasses the iOS Render Server. To verify iOS protection, you must use a physical device and test using Screen Recording or Screen Mirroring.
