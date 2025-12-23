@@ -19,12 +19,25 @@ In 2025, mobile security is more than a feature—it's a requirement. Whether yo
 
 ## 📸 See it in action
 
-| Protection ON (Android) | Protection ON (iOS) |
+### Protection States
+You can toggle protection dynamically. When enabled, the OS prevents the UI from being captured in the screen buffer.
+
+| Protection Disabled | Protection Enabled |
 | :---: | :---: |
-| ![Android Blocked Placeholder](https://raw.githubusercontent.com/YOUR_USERNAME/privacy_mask/main/doc/android_blocked.png) | ![iOS Blackout Placeholder](https://raw.githubusercontent.com/YOUR_USERNAME/privacy_mask/main/doc/ios_blackout.png) |
-| *System prevents capture* | *Content appears as a black box* |
+| ![Protection Disabled](https://raw.githubusercontent.com/VladRoscaDev/privacy_mask/main/example/PrivacyOff.jpeg) | ![Protection Enabled](https://raw.githubusercontent.com/VladRoscaDev/privacy_mask/main/example/PrivacyOn.jpeg) |
+| *App behaves normally* | *Ready for sensitive data* |
+
+### Screenshot Prevention
+When a user attempts to take a screenshot or record the screen while protection is active, the OS intercepts the action.
+
+| Result of Screenshot/Recording |
+| :---: |
+| ![Screenshot Blocked](https://raw.githubusercontent.com/VladRoscaDev/privacy_mask/main/example/PrivacyPreview.jpeg) |
+| *Android records a black screen/ iOS shows a security error* |
 
 ---
+
+
 
 ## 🚀 Getting Started
 
@@ -33,3 +46,5 @@ Add the dependency to your `pubspec.yaml`:
 ```yaml
 dependencies:
   privacy_mask: ^1.0.0
+
+## ⚠️ Note on Testing: Screenshot prevention is a hardware-level feature. It will not work on the iOS Simulator because the Simulator bypasses the iOS Render Server. To verify iOS protection, you must use a physical device and test using Screen Recording or Screen Mirroring.
