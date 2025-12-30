@@ -32,4 +32,4 @@ flutter:
         pluginClass: PrivacyMaskPlugin
       web:
         pluginClass: PrivacyMaskWeb
-        fileName: lib/privacy_mask_web.dart # Note the lib/ path
+        fileName: privacy_mask_web.dart

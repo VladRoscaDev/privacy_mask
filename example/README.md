@@ -35,6 +35,11 @@ When a user attempts to take a screenshot or record the screen while protection 
 | ![Screenshot Blocked](https://raw.githubusercontent.com/VladRoscaDev/privacy_mask/main/example/PrivacyPreview.jpeg) |
 | *Android records a black screen/ iOS shows a security error* |
 
+| Web Protection Disabled | Web Protection Enabled |
+| :---: | :---: |
+| ![Protection Disabled](https://raw.githubusercontent.com/VladRoscaDev/privacy_mask/main/example/web_privacy_off.png) | ![Protection Enabled](https://raw.githubusercontent.com/VladRoscaDev/privacy_mask/main/example/web_privacy_on.png) |
+| *App behaves normally* | *Ready for sensitive data* |
+
 ---
 
 ## ⚠️ Warning
