@@ -40,7 +40,10 @@ class _PrivacyMaskState extends State<PrivacyMask> {
   }
 
   void _updateProtection(bool shouldProtect) {
-    PrivacyMaskPlatform.instance.setSecure(shouldProtect);
+    //Ensure that we don't call during build phase:
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      PrivacyMaskPlatform.instance.setSecure(shouldProtect);
+    });
   }
 
   @override

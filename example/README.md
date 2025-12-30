@@ -40,6 +40,43 @@ When a user attempts to take a screenshot or record the screen while protection 
 ## ⚠️ Warning
 Note on Testing: Screenshot prevention is a hardware-level feature. It will not work on the iOS Simulator because the Simulator bypasses the iOS Render Server. To verify iOS protection, you must use a physical device and test using Screen Recording or Screen Mirroring.
 
+## Web support
+### Platform Security Matrix
+
+| Feature | Android | iOS | Web |
+| :--- | :---: | :---: | :---: |
+| **Block Screenshot** | ✅ Yes | ✅ Yes | ❌ No* |
+| **Block Screen Recording** | ✅ Yes | ✅ Yes | ❌ No* |
+| **Blur on Inactivity** | ❌ No | ❌ No | ✅ **Yes** |
+| **Block Text Selection** | ❌ No | ❌ No | ✅ **Yes** |
+| **Block Context Menu** | ❌ No | ❌ No | ✅ **Yes** |
+| **Block Printing** | ❌ No | ❌ No | ✅ **Yes** |
+
+> **\*Note:** Browsers do not permit hardware-level blocking of screenshots or recordings. Web support provides the highest level of software-level deterrence possible.
+
+
+It is important to be transparent with your users about what this plugin can and cannot do. In the security world, this is called defining the Threat Model.
+
+Here is a beautifully formatted Known Limitations section you can add to your README.md.
+
+## 🛑 Known Limitations & Security Disclosure
+While privacy_mask provides robust protection, no software solution is 100% foolproof. Developers should be aware of the following platform-specific constraints:
+
+📱 Mobile (iOS & Android)
+iOS Simulator: Screenshot prevention does not work on the iOS Simulator. Apple’s render server only applies security layers on physical hardware.
+
+External Hardware: This plugin cannot prevent someone from taking a physical photo of the device screen using another camera.
+
+System UI: On some Android versions, the "Recent Apps" switcher may still show a snapshot of the app if the mask was not active before the app was minimized.
+
+🌐 Web (The "Browser Sandbox")
+OS-Level Tools: We cannot block the system's "Print Screen" key, Snipping Tool (Windows), or Grab (macOS).
+
+Browser Extensions: Malicious browser extensions with "screen capture" permissions can bypass web-level event listeners.
+
+Developer Tools: An advanced user can open the Browser Inspector (F12) and manually disable the CSS blur or hidden styles.
+
+Intellectual Honesty: Web protection is a deterrent, not a total lock. It prevents 99% of casual "right-click save" or "accidental tab leak" scenarios but will not stop a determined attacker.
 
 ## 🚀 Getting Started
 
@@ -47,4 +84,4 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  privacy_mask: ^1.0.1
+  privacy_mask: ^1.0.2
