@@ -60,10 +60,6 @@ Note on Testing: Screenshot prevention is a hardware-level feature. It will not 
 > **\*Note:** Browsers do not permit hardware-level blocking of screenshots or recordings. Web support provides the highest level of software-level deterrence possible.
 
 
-It is important to be transparent with your users about what this plugin can and cannot do. In the security world, this is called defining the Threat Model.
-
-Here is a beautifully formatted Known Limitations section you can add to your README.md.
-
 ## 🛑 Known Limitations & Security Disclosure
 While privacy_mask provides robust protection, no software solution is 100% foolproof. Developers should be aware of the following platform-specific constraints:
 
@@ -89,4 +85,4 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  privacy_mask: ^1.0.2
+  privacy_mask: ^1.0.3

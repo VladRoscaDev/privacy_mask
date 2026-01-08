@@ -28,3 +28,8 @@
 * Modern Web Interop: Built using the latest package:web and dart:js_interop for WebAssembly (Wasm) compatibility and future-proofing.
 
 * Lifecycle Management: Added robust cleanup of JavaScript event listeners and injected styles when the PrivacyMask widget is disposed to prevent memory leaks and restore normal browser behavior.
+
+
+## 1.0.3
+
+* Minor adjustment to readme
