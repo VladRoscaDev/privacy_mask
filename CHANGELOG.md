@@ -33,3 +33,7 @@
 ## 1.0.3
 
 * Minor adjustment to readme
+
+## 1.0.4
+
+* Updated to latest versions
